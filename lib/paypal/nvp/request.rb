@@ -25,11 +25,12 @@ module Paypal
 
       def common_params
         {
-          :USER => self.username,
-          :PWD => self.password,
-          :SIGNATURE => self.signature,
-          :SUBJECT => self.subject,
-          :VERSION => self.version
+          USER: self.username,
+          PWD: self.password,
+          SIGNATURE: self.signature,
+          SUBJECT: self.subject,
+          VERSION: self.version,
+          version: self.version
         }
       end
 
